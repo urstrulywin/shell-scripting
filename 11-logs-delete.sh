@@ -19,7 +19,7 @@ if [ ! -d "$source_dir" ]; then
     usage
 fi
 
-files_to_delete=$( find "$source_dir" -type f -name "*.log" -mtime "${days}" )
+files_to_delete=$( find "$source_dir" -type f -name "*.log" -mtime "+${days}" )
 
 if [ -z "$files_to_delete" ]; then
     echo "No log files older than $days days found in $source_dir"
