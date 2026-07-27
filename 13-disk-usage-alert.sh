@@ -16,4 +16,4 @@ done <<< "$DISK_USAGE"
 
 echo -e "$MESSAGE"
 
-sh mail.sh "DevOps Team" "High Disk usage" "$SERVER_IP" "$MESSAGE" "nikhiljanagaman@gmail.com" "High Disk Usage Alert"
+sh mail-alert.sh "DevOps Team" "High Disk usage" "$SERVER_IP" "$MESSAGE" "nikhiljanagaman@gmail.com" "High Disk Usage Alert"
